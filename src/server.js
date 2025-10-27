@@ -3,7 +3,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import swaggerUi from 'swagger-ui-express';
 import YAML from 'yamljs';
-import taskRoutes from './routes/taskRoutes.js';
+import taskRoutes from './routes2/taskRoutes.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
