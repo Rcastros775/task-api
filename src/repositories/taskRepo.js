@@ -4,6 +4,12 @@ export async function findAll() {
   return prisma.task.findMany();
 }
 
+export async function getById(id) {
+  const task = await prisma.task.findUnique({where: { id }});
+
+  return task;
+}
+
 // Create a new task
 export async function create(data) {
   return prisma.task.create({
